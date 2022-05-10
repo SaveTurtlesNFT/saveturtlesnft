@@ -57,7 +57,7 @@ const WalletAmount = styled.div`
 `;
 
 const Wallet = styled.ul`
-  flex: 1 0 auto;
+  flex: 1 0 1 auto;
   margin: 0;
   padding: 0;
   justify-content: right;
@@ -555,8 +555,7 @@ const Home = (props: HomeProps) => {
         <main>
             <MainContainer>
                 <WalletContainer>
-                    <Logo><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer"><img alt=""
-                                                                                                          src="logo.png"/></a></Logo>
+                    <Logo><img alt="" src="logo.png"/></Logo>
                     <Menu>
                         <li></li>
                         <li></li>
@@ -577,7 +576,7 @@ const Home = (props: HomeProps) => {
                             <br/>
                             <div><Price
                                 label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/>
-                                    <Image src="0.png" alt="NFT To Mint"/>
+                                    <Image src="turtles.gif" alt="NFT To Mint"/>
                             </div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
