@@ -69,6 +69,7 @@ const ConnectButton = styled(WalletMultiButton)`
   background-color: #4E44CE;
   margin: 0 auto;
   align: right;
+  width: 15%;
 `;
 
 
